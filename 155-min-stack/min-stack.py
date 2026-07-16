@@ -11,7 +11,8 @@ class MinStack:
         if len(self.mini) > 0:
             self.mini.append(min(self.mini[len(self.mini)-1], value))
         else:
-            self.mini.append(value)
+            if value not in self.mini:
+                self.mini.append(value)
 
 
     def pop(self) -> None:
