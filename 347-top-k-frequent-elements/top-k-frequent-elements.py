@@ -1,5 +1,6 @@
 from collections import Counter
 class Solution:
+    #use the counter function and sort it with function, 
     def topKFrequent(self, nums: List[int], k: int) -> List[int]:
         self.result = []
         self.dic = list(Counter(nums).items())
