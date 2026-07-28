@@ -8,7 +8,7 @@ class Solution:
             if key not in self.result:
                 self.result[key] = []
             self.result[key].append(s)
-        
+                 
         
         return list(self.result.values())
 
