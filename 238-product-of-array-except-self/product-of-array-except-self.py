@@ -20,8 +20,7 @@ class Solution:
             else:
                 total = total * nums[i+1]
             self.suffix.append(total)
-        print(self.prefix)
-        print(self.suffix)
+       
         self.suffix.reverse()
         for i in range(len(nums)):
             self.result.append(self.prefix[i] * self.suffix[i])
