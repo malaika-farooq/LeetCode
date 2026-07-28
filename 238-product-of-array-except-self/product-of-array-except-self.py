@@ -1,7 +1,8 @@
 class Solution:
     def productExceptSelf(self, nums: List[int]) -> List[int]:
 
-        # you could divide, you'd compute the total product of the array, then for each index just do total / nums[i]
+        # compute the total product of the array, then for each index just do total / nums[i] but not acceptable here so, for each index, multiply the running product of everything to its left by the running product of everything to its right
+
         self.prefix = []
         self.suffix = []
         self.result = []
